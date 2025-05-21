@@ -17,7 +17,7 @@ We update the list in reverse order to avoid overwriting values.
 Pascal's Triangle builds from previous rows.
 Reverse traversal helps avoid overwriting values while updating.
 
-# Leetcode 678 - Valid Parenthesis String
+# 🚀Leetcode 678 - Valid Parenthesis String
 ## Problem Statement
 Given a string `s` containing only three types of characters: `'('`, `')'`, and `'*'`, return `true` if `s` is **valid**.
 ### A valid string must follow these rules:
@@ -26,13 +26,11 @@ Given a string `s` containing only three types of characters: `'('`, `')'`, and 
 - `'('` must appear before the corresponding `')'`.
 - `'*'` can be treated as `'('`, `')'`, or an empty string `""`.
 - 
-## 📘 Examples
+## Examples
 Input: s = "()"
 Output: true
-## ✅ Approach
+## Approach
 We use a **Greedy** strategy to keep track of the **range** of possible open parentheses at any point:
-- `minOpen`: Minimum number of unclosed `'('` assuming `'*'` acts as `')'`.
-- `maxOpen`: Maximum number of unclosed `'('` assuming `'*'` acts as `'('`.
 ### Steps:
 1. Iterate through each character in the string.
 2. Update `minOpen` and `maxOpen` based on character:
